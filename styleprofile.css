@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.buttons::selection {
+    background-color: transparent; 
+}
+
+body {
+    background: url(img/main_foto.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+.profile-section {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#profile {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+   text-shadow: 
+    -0   -1px 0   rgb(34, 32, 153),
+     0   -1px 0   rgb(34, 32, 153),
+    -0    1px 0   rgb(34, 32, 153),
+     0    1px 0   rgb(34, 32, 153),
+    -1px -0   0   rgb(34, 32, 153),
+     1px -0   0   rgb(34, 32, 153),
+    -1px  0   0   rgb(34, 32, 153),
+     1px  0   0   rgb(34, 32, 153),
+    -1px -1px 0   rgb(34, 32, 153),
+     1px -1px 0   rgb(34, 32, 153),
+    -1px  1px 0   rgb(34, 32, 153),
+     1px  1px 0   rgb(34, 32, 153),
+    -1px -1px 0   rgb(34, 32, 153),
+     1px -1px 0   rgb(34, 32, 153),
+    -1px  1px 0   rgb(34, 32, 153),
+     1px  1px 0   rgb(34, 32, 153); 
+     color: white;
+    font-size: 3.5em;
+}
+
+#background_form {
+    display: none;
+}
+
+/*==================== Мини меню ========================*/
+
+#mini_menu {
+    display: none;
+    vertical-align: top;
+    background-color: orange;
+    list-style: none;
+    width: 100%;
+}
+
+#menu_button, #profile_button {
+    float: left;
+    background-color: orange;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#profile_button {
+    float: right;
+}
+
+
+/*==================== Основное меню ========================*/
+
+
+#menu {
+    margin: 20px 0;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+    width: 18.6%;
+    text-align: center;
+    outline: 1px solid #0c0c0c;
+    background: orange;
+    cursor: pointer;
+    font-size: 1.7vw;
+}
+
+.menu {
+    display: inline-block;
+    font-size: 110%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0300cc;
+    padding: 10px 0;
+}
+
+#family_members {
+    width: 1000px;
+    display: inline-block;
+    margin: 40px auto;
+    border: 3px solid rgb(26, 25, 25);
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+#family_members h1 {
+    font-size: 120%;
+}
+
+#family_members img {
+    width: 70%;
+}
+
+@media screen and (max-width: 1170px) {
+    #family_members {
+        width: 90%;
+    }
+}
+
+.family_members {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    margin: 25px 0;
+    color: white;
+    font-size: 1.8vw;
+    text-shadow: 
+   -0   -1px 0   rgb(5, 5, 75),
+    0   -1px 0   rgb(5, 5, 75),
+   -0    1px 0   rgb(5, 5, 75),
+    0    1px 0   rgb(5, 5, 75),
+   -1px -0   0   rgb(5, 5, 75),
+    1px -0   0   rgb(5, 5, 75),
+   -1px  0   0   rgb(5, 5, 75),
+    1px  0   0   rgb(5, 5, 75),
+   -1px -1px 0   rgb(5, 5, 75),
+    1px -1px 0   rgb(5, 5, 75),
+   -1px  1px 0   rgb(5, 5, 75),
+    1px  1px 0   rgb(5, 5, 75),
+   -1px -1px 0   rgb(5, 5, 75),
+    1px -1px 0   rgb(5, 5, 75),
+   -1px  1px 0   rgb(5, 5, 75),
+    1px  1px 0   rgb(5, 5, 75); 
+}
+
+.profiles_picture {
+    height: 150px;
+    width: 75%;
+    height: 80%;
+    outline: 1px solid black;
+    margin: 15px auto;
+}
+
+.show {
+    top: 50px !important;
+}
+
+
+@media screen and (max-width: 480px) {
+    #mini_menu{display: inline-block;border-bottom: 1px solid black;position: relative;z-index: 3}
+
+    #menu {
+        margin: 0;
+        float: right;
+        position: absolute;
+        top: -190px;
+        right: 0;
+        z-index: 2;
+        transition: .3s; 
+    }
+
+    #menu li {
+        width: 150px;
+        text-align: left;
+        display: block;        
+        outline: none;
+        border-bottom: 1px solid black;
+        font-size: 75%;
+        padding: 0 10px;
+    }
+}
+
